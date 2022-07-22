@@ -2,6 +2,7 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --accent-color-2: #f5f4fa;
   --primary-bg-color: #fff;
   --secondary-bg-color: #2f303a;
 }
@@ -12,18 +13,34 @@
   background-color: var(--primary-bg-color);
 }
 
+/*-------------------------- header section-------------------------- */
+
+.logo,
+.sub-logo {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.sub-logo {
+  color: var(--primary-text-color);
+}
+
 .header-list {
   list-style: none;
-  color: var(--primary-text-color);
+}
+
+.link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-.link {
-    text-decoration: none;
-} 
 
 .header-list .link:hover,
 .header-list .link:focus {
@@ -53,7 +70,7 @@
 .header-list .mail:hover {
   color: var(--accent-color);
 }
-
+/*-------------------------- Hero section --------------------------*/
 .hero {
   background-color: var(--secondary-bg-color);
 }
@@ -75,7 +92,13 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
+
+/*-------------------------- Feature section-------------------------- */
 
 .feature-list {
   list-style: none;
@@ -96,6 +119,8 @@
   letter-spacing: 0.03em;
 }
 
+/*-------------------------- Work section-------------------------- */
+
 .work-list {
   list-style: none;
 }
@@ -107,6 +132,8 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+/* --------------------------team section-------------------------- */
 
 .team {
   background-color: #f5f4fa;
@@ -124,6 +151,12 @@
   list-style: none;
 }
 
+.team-iteam {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-player {
   font-weight: 500;
   font-size: 16px;
@@ -141,12 +174,19 @@
   letter-spacing: 0.03em;
 }
 
+/*-------------------------- Footer-address section-------------------------- */
+
 .footer {
   background-color: var(--secondary-bg-color);
 }
 
-.footer-logo {
-  color: var(--accent-color);
+.footer-sub-logo {
+  color: var(--primary-bg-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .footer-list {
@@ -161,8 +201,13 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+.map-address:hover,
+.map-adress:focus {
+  color: var(--accent-color);
+}
 
 .footer-mail {
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -171,9 +216,64 @@
 }
 
 .footer-tel {
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-color);
+}
+
+.footer-mail:hover,
+.footer-mail:focus {
+  color: var(--accent-color);
+}
+
+/*-------------------------- Portfolio------------------------------ */
+
+.filtr-list {
+  list-style: none;
+}
+
+.filtr-btn {
+  color: var(--primary-text-color);
+  background-color: var(--accent-color-2);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: 0;
+}
+
+.filtr-btn:hover,
+.filtr-btn:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filtr-cards {
+  background-color: var(--primary-bg-color);
+  border: 1px solid #EEEEEE;
+}
+
+.filtr-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.filtr-text {
+  color: #757575;
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
 }
